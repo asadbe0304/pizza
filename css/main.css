@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.header__list--link {
+    text-decoration: none;
+}
+
+.header-basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.form__list--item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.form__list--item:nth-child(2) {
+    width: 55px;
+    height: 55px;
+}
+
+.form__list--item:nth-child(3) {
+    width: 65px;
+    height: 65px;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.footer__link {
+    color: #fff;
+}
+
+.order__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* modal */
+
+.modal__fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 55;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-100%); */
+    display: none;
+}
+.modal-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    opacity: 0.9;
+}
+.fa-3x{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+}
+.modal-dialog{
+    background: #fff;
+    display: flex;
+
+}
+.inner-item{
+    display: none;
+}
+.inner-items{
+    display: none;
+}
+.inner-item-2{
+    display: none;
+}
+.inner-item-3{
+    display: none;
+}
+.inner-item-4{
+    display: none;
+}
+.inner-item-5{
+    display: none;
+}
+.inner-item-6{
+    display: none;
+}
+.inner-items-2{
+    display: none;
+}
+/* .header__list{
+    display: none;
+} */
+
+/* @media screen and(max-width:991px) {
+    .fa-align-justify{
+        display: block;
+    }
+} */
