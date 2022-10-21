@@ -60,10 +60,10 @@
         <div
             class="row d-lg-flex flex-sm-column d-xl-flex d-xxl-flex flex-lg-row align-items-center align-items-sm-center align-items-md-center flex-xl-row flex-xxl-row flex-md-column">
             <div class="col-lg-8 col-sm-12 col-md-12">
-                <form class="form" action="#">
+                <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
                     <label for="pizza-dough" class="col-lg-6 col-sm-8 col-md-8 my-3 fw-bold fs-4">
                         Noni Qanday bo'lsin?
-                        <select name="pizza" id="pizza-dough"
+                        <select name="pizza" id="pizza-dough" required
                             class="form-control bread my-3 col-sm-8 col-md-8 col-lg-12">
                             <option value="Yupqa" disabled selected>All</option>
                             <option value="Yupqa" class="opt">Yupqa</option>
@@ -90,33 +90,36 @@
                         <h4 class="text p-0 fw-bold ">
                             Ustiga Nima Solaylik?
                         </h4>
-                        <div class="col-6 col-sm-8 col-md-8 col-lg-6 form-check d-flex flex-column ">
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" value="Pomidor" name="check" id="check" class="form-check-input">
-                                Pomidor
-                            </label>
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" name="check" id="check" class="form-check-input check-2">
-                                Indeyka
-                            </label>
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" name="check" id="check" class="form-check-input check-3">
-                                Ananas
-                            </label>
-                        </div>
-                        <div class="col-6 col-lg-6 col-sm-8 col-md-8 form-check d-flex flex-column">
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" name="check" id="check" class="form-check-input check-4">
-                                Zaytun
-                            </label>
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" name="check" id="check" class="form-check-input check-5">
-                                Tuzlangan Bodring
-                            </label>
-                            <label for="check" class="my-2 label">
-                                <input type="checkbox" name="check" id="check" class="form-check-input check-6">
-                                Qo'ziqorin
-                            </label>
+                        <div class="row d-flex col-12">
+                            <div class="col-6 col-sm-8 col-md-8 col-lg-6 form-check d-flex flex-column ">
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" value="Pomidor" name="check" id="check"
+                                        class="form-check-input">
+                                    Pomidor
+                                </label>
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" name="check" id="check" class="form-check-input check-2">
+                                    Indeyka
+                                </label>
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" name="check" id="check" class="form-check-input check-3">
+                                    Ananas
+                                </label>
+                            </div>
+                            <div class="col-6 col-lg-6 col-sm-8 col-md-8 form-check d-flex flex-column">
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" name="check" id="check" class="form-check-input check-4">
+                                    Zaytun
+                                </label>
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" name="check" id="check" class="form-check-input check-5">
+                                    Tuzlangan Bodring
+                                </label>
+                                <label for="check" class="my-2 label">
+                                    <input type="checkbox" name="check" id="check" class="form-check-input check-6">
+                                    Qo'ziqorin
+                                </label>
+                            </div>
                         </div>
                         <div class="row p-0 my-4">
                             <h4 class="text my-2 fw-bold">
@@ -130,7 +133,7 @@
                             </div>
                             <div class="col-6 col-lg-6 col-sm-6 col-md-6">
                                 <label for="check-9 Salsa" class="my-2">
-                                    <input type="checkbox" name="check" id="peperoni" class="form-check-input check-9">
+                                    <input type="checkbox" name="check" id="check-9" class="form-check-input check-9">
                                     Salsa Sous
                                 </label>
                             </div>
@@ -142,7 +145,7 @@
                 <div class="row">
                     <ul class="order__list">
                         <li class="order__list--item item-bread fs-4 fw-bold py-3 d-flex">
-                            Non:
+                            Non:   
                             <p class="demo fw-normal"></p>
                         </li>
                         <li class="order__list--item fs-4 d-flex fw-bold py-3">
@@ -170,7 +173,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <button type="button"
+                    <button type="submit"
                         class="btn btn-danger my-4 col-10 col-lg-10 col-md-8 col-sm-8 py-3 mx-auto">Done</button>
                 </div>
             </div>
