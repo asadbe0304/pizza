@@ -48,6 +48,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
+    cursor: pointer;
 }
 
 .form__list--item:nth-child(2) {
