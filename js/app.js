@@ -4,13 +4,15 @@
 const elSelect = $(".bread")
 const size = $('.item')
 const input = $('form-check-input')
+
+
 elSelect.addEventListener('change', (e) => {
     $(".demo").innerHTML = e.target.value;
 })
 // console.log(elSize);
 
 size.addEventListener('click', (e) => {
-    $('.item').classList.add('class', 'bg-danger', 'text-white')
+    $('.item').classList.add('bg-danger', 'text-white')
     $(".size").innerHTML = `25,`;
 })
 const size2 = $('.item2')
@@ -29,14 +31,15 @@ $('.btn').addEventListener('click', (e) => {
     if ($('.form-check-input').checked === true) {
         $('.modal__fade').style.display = "flex";
     } else {
-        $('.modal__fade').style.display = "flex";
-        $(".modal_body").innerHTML = '<h2 class="text-danger">Buyurtmangiz qabul qilinmadi! </h2> '
-        $('.btn-success').classList.add('class', 'btn-danger')
+        $('.modal__fade-danger').style.display = "flex";
     }
 })
 
 $('.btn-success').addEventListener('click', (e) => {
     $('.modal__fade').style.display = "none";
+})
+$('.danger').addEventListener('click', (e) => {
+    $('.modal__fade-danger').style.display = "none";
 })
 
 
